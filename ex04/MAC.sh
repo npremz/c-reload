@@ -1,1 +1,1 @@
-ifconfig | grep -w "ether" | sed "s/  ether//" | sed "s/ //"
+ifconfig | grep -o "..:..:..:..:..:.."

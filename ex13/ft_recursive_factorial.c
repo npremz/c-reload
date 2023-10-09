@@ -6,13 +6,13 @@
 /*   By: npremont <npremont@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 15:05:01 by npremont          #+#    #+#             */
-/*   Updated: 2023/10/09 18:05:28 by npremont         ###   ########.fr       */
+/*   Updated: 2023/10/09 18:08:17 by npremont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_recursive_factorial(int nb)
 {
-	if (nb > 1 && nb <=12)
+	if (nb > 1 && nb <= 12)
 		return (ft_recursive_factorial(nb - 1) * nb);
 	else if (nb == 1 || nb == 0)
 		return (1);
@@ -20,10 +20,10 @@ int	ft_recursive_factorial(int nb)
 		return (0);
 }
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int	main(void)
-// {
-// 	printf("%d\n", ft_recursive_factorial(14));
-// 	return (0);
-// }
+int	main(void)
+{
+	printf("%d\n", ft_recursive_factorial(14));
+	return (0);
+}
